@@ -1,0 +1,426 @@
+/* General styles */
+.App {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #666;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f0f2f5;
+}
+
+/* Blip form styles */
+.blip-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.blip-input {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.blip-form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emoji-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.submit-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  background-color: #1557b0;
+}
+
+/* Emoji picker styles */
+.emoji-picker-container {
+  position: absolute;
+  z-index: 1000;
+  margin-top: 0.5rem;
+}
+
+/* Blip card styles */
+.blip-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.blip-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.username {
+  font-weight: 500;
+  color: #1a73e8;
+}
+
+.timestamp {
+  color: #666;
+  font-size: 0.875rem;
+  margin-left: auto;
+}
+
+.blip-content {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.blip-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.reaction-button,
+.report-button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.reaction-button:hover,
+.report-button:hover {
+  background-color: #f0f2f5;
+}
+
+/* Form styles */
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1a73e8;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.form-button:hover {
+  background-color: #1557b0;
+}
+
+/* Admin dashboard styles */
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.admin-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #666;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #f5f5f5;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.reports-list,
+.users-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.report-card,
+.user-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-header,
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.report-actions,
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.report-button,
+.user-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.report-button {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.report-button:hover {
+  background-color: #e9ecef;
+}
+
+.report-button.ban {
+  background-color: #dc3545;
+  color: white;
+}
+
+.report-button.ban:hover {
+  background-color: #c82333;
+}
+
+.report-button.delete {
+  background-color: #6c757d;
+  color: white;
+}
+
+.report-button.delete:hover {
+  background-color: #5a6268;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.user-info p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.user-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.user-button.ban {
+  background-color: #dc3545;
+  color: white;
+}
+
+.user-button.ban:hover {
+  background-color: #c82333;
+}
+
+.user-button.unban {
+  background-color: #28a745;
+  color: white;
+}
+
+.user-button.unban:hover {
+  background-color: #218838;
+}
+
+.user-button.delete {
+  background-color: #6c757d;
+  color: white;
+}
+
+.user-button.delete:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 1rem;
+  }
+
+  .report-header,
+  .user-info {
+    flex-direction: column;
+  }
+
+  .report-actions,
+  .user-actions {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .report-button,
+  .user-button {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .blip-form {
+    padding: 0.5rem;
+  }
+
+  .blip-card {
+    padding: 0.75rem;
+  }
+
+  .form-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+} 
